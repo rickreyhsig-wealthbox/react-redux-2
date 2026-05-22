@@ -16,7 +16,7 @@ export default defineConfig({
     react(),
   ],
   server: {
-    port: 3000,
+    port: 3001,
   },
   optimizeDeps: {
     force: true,
