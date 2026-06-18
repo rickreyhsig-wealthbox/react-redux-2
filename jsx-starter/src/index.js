@@ -65,4 +65,3 @@ function App4() {
 
 root.render(<MyApp />);
 
-import asdf from '../../componenents/common/Button';
