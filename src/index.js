@@ -3,13 +3,14 @@
 1) Import React and ReactDOM
 2) Get reference to the div with ID root
 3) Tell React to take control of that element
-4) Create a component
+4) Create a component - moved to ./App.js
 5) Show the component on the screen
 
 */
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App5 from './App';
 
 const el = document.getElementById('root');
 
@@ -61,18 +62,7 @@ function App4() {
   // return <input style={{ backgroundColor: 'gray' }} />;
 }
 
-function App5() {
-  return (
-    <div className="wrapper">
-      <textarea
-        readOnly={true}
-        maxLength={3}
-        spellCheck={true}
-        style={{ backgroundColor: 'gray' }}
-      />
-    </div>
-  );
-}
+
 
 
 root.render(<App5 />);
