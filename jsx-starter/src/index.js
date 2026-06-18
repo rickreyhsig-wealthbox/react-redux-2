@@ -10,7 +10,7 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App5 from './App';
+import MyApp from './App';
 
 const el = document.getElementById('root');
 
@@ -63,6 +63,6 @@ function App4() {
 }
 
 
+root.render(<MyApp />);
 
-
-root.render(<App5 />);
+import asdf from '../../componenents/common/Button';
