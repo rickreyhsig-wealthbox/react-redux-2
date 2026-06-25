@@ -1,12 +1,5 @@
 function ProfileCard({ title, handle, image }) {
-	console.log(title, handle, image)
-	// const title = props.title;
-	// const handle = props.handle;
-	// const image = props.image;
-
-	// const { title, handle, image } = props;
-
-	// 3 Destructure in props
+	// console.log(title, handle, image)
 
   return (
 		<div>
