@@ -4,6 +4,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   const handleClick = () => {
+    // when the setter function is called, it triggers a re-render
     setCount(count + 1);
   }
 
