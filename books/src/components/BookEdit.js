@@ -1,5 +1,11 @@
 function BookEdit() {
-  return <div>Book Edit</div>;
+  return (
+    <form className="book-edit">
+      <label>Title</label>
+      <input className="input" />
+      <button className="button is-primary">Save</button>
+    </form>
+  );
 }
 
 export default BookEdit;
