@@ -1,10 +1,15 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import BookCreate from './components/BookCreate';
 import BookList from './components/BookList';
 
 function App() {
   const [books, setBooks] = useState([]);
+
+  const fetchBooks = async () => {
+    const response = await axios.get('http://localhost:4001/books');
+    setBooks(response.data);
+  };
 
   const editBookById = (id, newTitle) => {
     const updatedBooks = books.map((book) => {
@@ -15,6 +20,11 @@ function App() {
     });
     setBooks(updatedBooks);
   }
+
+  // useEffect to fetch books when the component mounts
+  useEffect(() => {
+    fetchBooks();
+  }, []);
 
   const deleteBookById = (id) => {
     const updatedBooks = books.filter((book) => {
