@@ -8,8 +8,8 @@ function App() {
 
   // useEffect to fetch books when the component mounts
   useEffect(() => {
-    fetchBooks(); // Need to get from context
-  }, []);
+    fetchBooks();
+  }, [fetchBooks]);
 
   return (
     <div className="app">
