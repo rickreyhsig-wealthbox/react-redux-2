@@ -15,11 +15,14 @@ function App() {
   ];
 
   return (
-    <Dropdown
-      options={options}
-      value={selection}
-      onChange={handleSelect}
-    />
+    <div>
+      <a href="/dashboard">Dashboard</a>
+      <Dropdown
+        options={options}
+        value={selection}
+        onChange={handleSelect}
+      />
+    </div>
   )
 }
 
