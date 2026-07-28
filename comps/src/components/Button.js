@@ -7,7 +7,7 @@ const finalClassName = className({
   'text-yellow-500': true,
 });
 
-console.log(finalClassName);
+// console.log(finalClassName);
 
 function Button({ children,
   text,
