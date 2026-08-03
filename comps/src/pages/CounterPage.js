@@ -16,7 +16,11 @@ const reducer = (state, action) => {
     case SET_VALUE_TO_ADD:
       return { ...state, valueToAdd: action.payload };
     case ADD_VALUE_TO_COUNT:
-      return { ...state, count: state.count + state.valueToAdd };
+      return {
+        ...state,
+        count: state.count + state.valueToAdd,
+        valueToAdd: 0
+      };
     default:
       return state;
   }
