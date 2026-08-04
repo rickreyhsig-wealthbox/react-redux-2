@@ -1,5 +1,22 @@
 import { configureStore, createSlice } from '@reduxjs/toolkit';
 
+const moviesSlice = createSlice({
+  name: 'movie',
+  initialState: ['movie1', 'movie2', 'movie3'],
+  reducers: {
+    addMovie(state, action) {
+      state.push(action.payload);
+    },
+    removeMovie(state, action) {
+      const index = state.indexOf(action.payload);
+      state.splice(index, 1);
+    },
+    setMovies(state, action) {
+      return action.payload;
+    },
+  },
+});
+
 const songsSlice = createSlice({
   name: 'song',
   initialState: ['song1', 'song2', 'song3'],
@@ -8,7 +25,6 @@ const songsSlice = createSlice({
       state.push(action.payload);
     },
     removeSong(state, action) {
-      // return state.filter((song) => song !== action.payload);
       const index = state.indexOf(action.payload);
       state.splice(index, 1);
     },
@@ -21,27 +37,12 @@ const songsSlice = createSlice({
 const store = configureStore({
   reducer: {
     songs: songsSlice.reducer,
+    movies: moviesSlice.reducer,
   },
 });
 
+console.log(store.getState());
+
 export { store };
 export const { addSong, removeSong, setSongs } = songsSlice.actions;
-
-/*
-// console.log(songsSlice.actions); // Log the action creators
-const startingState = store.getState();
-console.log(JSON.stringify(startingState)); // Log the initial state
-
-// store.dispatch({
-//   type: 'song/addSong',
-//   payload: 'New song'
-// });
-store.dispatch(addSong('New song')); // Dispatch the addSong action
-store.dispatch(songsSlice.actions.addSong('Another new song')); // Dispatch the addSong action using the action creator
-
-const finalState = store.getState();
-console.log(JSON.stringify(finalState)); // Log the state after adding a song
-
-// export default store;
-
-*/
+export const { addMovie, removeMovie, setMovies } = moviesSlice.actions;
