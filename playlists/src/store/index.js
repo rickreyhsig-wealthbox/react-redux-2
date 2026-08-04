@@ -16,46 +16,30 @@ const songsSlice = createSlice({
   },
 });
 
-export const { addSong, removeSong, setSongs } = songsSlice.actions;
-
 const store = configureStore({
   reducer: {
     songs: songsSlice.reducer,
   },
 });
 
+export { store };
+export const { addSong, removeSong, setSongs } = songsSlice.actions;
+
+/*
+// console.log(songsSlice.actions); // Log the action creators
 const startingState = store.getState();
 console.log(JSON.stringify(startingState)); // Log the initial state
 
-store.dispatch({
-  type: 'song/addSong',
-  payload: 'New song'
-});
+// store.dispatch({
+//   type: 'song/addSong',
+//   payload: 'New song'
+// });
+store.dispatch(addSong('New song')); // Dispatch the addSong action
+store.dispatch(songsSlice.actions.addSong('Another new song')); // Dispatch the addSong action using the action creator
+
 const finalState = store.getState();
 console.log(JSON.stringify(finalState)); // Log the state after adding a song
 
+// export default store;
 
-/*
-const initialState = {
-  playlists: [],
-};
-
-const playlistsSlice = createSlice({
-  name: 'playlists',
-  initialState,
-  reducers: {
-    setPlaylists(state, action) {
-      state.playlists = action.payload;
-    },
-  },
-});
-
-export const { setPlaylists } = playlistsSlice.actions;
-
-const store = configureStore({
-  reducer: {
-    playlists: playlistsSlice.reducer,
-  },
-});*/
-
-export default store;
+*/
