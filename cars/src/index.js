@@ -1,13 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
 import App from './App';
-// import { Provider } from './context/Books';
+import { store } from './store';
+import { Provider } from 'react-redux';
 
 const el = document.getElementById('root')
 const root = ReactDom.createRoot(el)
 
 root.render(
-  // <Provider>
+  <Provider store={store}>
     <App />
-  // </Provider>
+  </Provider>
 );
