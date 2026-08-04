@@ -14,6 +14,10 @@ const moviesSlice = createSlice({
     setMovies(state, action) {
       return action.payload;
     },
+    resetMovies(state, action) {
+      console.log(action);
+      return [];
+    },
   },
 });
 
@@ -32,6 +36,11 @@ const songsSlice = createSlice({
       return action.payload;
     },
   },
+  extraReducers(builder) {
+    builder.addCase(moviesSlice.actions.resetMovies, (state, action) => {
+      return [];
+    });
+  },
 });
 
 const store = configureStore({
@@ -45,4 +54,6 @@ console.log(store.getState());
 
 export { store };
 export const { addSong, removeSong, setSongs } = songsSlice.actions;
-export const { addMovie, removeMovie, setMovies } = moviesSlice.actions;
+export const { addMovie, removeMovie, setMovie, resetMovies } = moviesSlice.actions;
+
+// console.log(moviesSlice.actions.resetMovies.toString);
