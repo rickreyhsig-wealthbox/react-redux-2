@@ -8,7 +8,9 @@ const songsSlice = createSlice({
       state.push(action.payload);
     },
     removeSong(state, action) {
-      return state.filter((song) => song !== action.payload);
+      // return state.filter((song) => song !== action.payload);
+      const index = state.indexOf(action.payload);
+      state.splice(index, 1);
     },
     setSongs(state, action) {
       return action.payload;
