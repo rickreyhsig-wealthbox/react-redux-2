@@ -18,7 +18,6 @@ function CarList() {
       name: state.form.name
     }
   });
-  // const name = useSelector((state) => state.form.name);
 
   const handleCarDelete = (car) => {
     dispatch(removeCar(car.id));
