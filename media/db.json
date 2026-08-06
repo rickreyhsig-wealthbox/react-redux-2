@@ -1,11 +1,30 @@
 {
   "users": [
-    { "id": 1, "name": "Myra" },
-    { "id": 2, "name": "Bob" },
-    { "id": 3, "name": "Charlie" }
+    {
+      "id": 1,
+      "name": "Myra Test"
+    },
+    {
+      "name": "Dr. Laverne Krajcik",
+      "id": 2
+    },
+    {
+      "name": "Dr. Jimmie Krajcik",
+      "id": 3
+    },
+    {
+      "name": "Marilyn McGlynn MD",
+      "id": 4
+    },
+    {
+      "name": "Mrs. Levi Bradtke",
+      "id": 5
+    },
+    {
+      "name": "Milton Windler",
+      "id": 6
+    }
   ],
   "albums": [],
   "photos": []
 }
-
-// GET http://localhost:3001/users
