@@ -1,42 +1,6 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Myra Test"
-    },
-    {
-      "name": "Dr. Laverne Krajcik",
-      "id": 2
-    },
-    {
-      "name": "Dr. Jimmie Krajcik",
-      "id": 3
-    },
-    {
-      "name": "Marilyn McGlynn MD",
-      "id": 4
-    },
-    {
-      "name": "Mrs. Levi Bradtke",
-      "id": 5
-    },
-    {
-      "name": "Milton Windler",
-      "id": 6
-    },
-    {
-      "name": "Mrs. Leo Schinner",
-      "id": 7
-    },
-    {
-      "name": "Lewis Macejkovic",
-      "id": 8
-    },
-    {
-      "name": "Sandy D'Amore",
-      "id": 9
-    },
-    {
       "name": "Cornelius Dach",
       "id": 10
     },
@@ -107,10 +71,6 @@
     {
       "name": "Patricia Fisher",
       "id": 27
-    },
-    {
-      "name": "Floyd O'Connell",
-      "id": 28
     }
   ],
   "albums": [],
