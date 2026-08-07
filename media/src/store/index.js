@@ -11,3 +11,4 @@ console.log(store.getState());
 
 export * from './thunks/fetchUsers';
 export * from './thunks/addUser';
+export * from './thunks/removeUser';
