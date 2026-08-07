@@ -3,11 +3,10 @@ import axios from "axios";
 
 const removeUser = createAsyncThunk(
   "users/remove",
-  async (user, { rejectWithValue }) => {
-    const response = await axios.delete(`http://localhost:3005/users/${user.id}`);
+  async (user) => {
+    await axios.delete(`http://localhost:3005/users/${user.id}`);
 
-    // FIX !!!
-    return response.data;
+    return user;
 });
 
 
