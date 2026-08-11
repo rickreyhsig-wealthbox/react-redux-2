@@ -19,36 +19,6 @@
   ],
   "albums": [
     {
-      "userId": 24,
-      "title": "Small Bronze Salad",
-      "id": 11
-    },
-    {
-      "userId": 24,
-      "title": "Awesome Granite Hat",
-      "id": 12
-    },
-    {
-      "userId": 24,
-      "title": "Fantastic Steel Pizza",
-      "id": 13
-    },
-    {
-      "userId": 25,
-      "title": "Recycled Soft Tuna",
-      "id": 14
-    },
-    {
-      "userId": 24,
-      "title": "Recycled Steel Car",
-      "id": 15
-    },
-    {
-      "userId": 25,
-      "title": "Recycled Rubber Car",
-      "id": 16
-    },
-    {
       "userId": 27,
       "title": "Licensed Cotton Cheese",
       "id": 17

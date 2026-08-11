@@ -11,12 +11,12 @@ function AlbumsListItem({ album }) {
   };
 
   const header = (
-    <div>
-      <Button loading={results.isLoading} onClick={handleRemoveAlbum}>
+    <>
+      <Button className="mr-2" loading={results.isLoading} onClick={handleRemoveAlbum}>
         <GoTrashcan />
       </Button>
       {album.title}
-    </div>
+    </>
   );
 
   return (
