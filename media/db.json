@@ -19,11 +19,6 @@
   ],
   "albums": [
     {
-      "id": 10,
-      "title": "Hiking Trip",
-      "userId": 24
-    },
-    {
       "userId": 24,
       "title": "Small Bronze Salad",
       "id": 11
