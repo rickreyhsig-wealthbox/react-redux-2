@@ -36,15 +36,14 @@
   ],
   "photos": [
     {
+      "albumId": 19,
+      "url": "https://loremflickr.com/150/150/abstract?lock=16740",
       "id": 1
     },
     {
-      "id": 2
-    },
-    {
       "albumId": 19,
-      "url": "https://loremflickr.com/150/150/abstract?lock=47661",
-      "id": 3
+      "url": "https://loremflickr.com/150/150/abstract?lock=36049",
+      "id": 2
     }
   ]
 }
