@@ -19,19 +19,19 @@ const photosApi = createApi ({
           };
         }
       }),
-      addPhoto: builder.query({
+      addPhoto: builder.mutation({
         query: (album) => {
           return {
             url: '/photos',
-            params: {
+            method: 'POST',
+            body: {
               albumId: album.id,
               url: faker.image.abstract(150, 150, true)
-            },
-            method: 'POST'
+            }
           };
         }
       }),
-      removePhoto: builder.query({
+      removePhoto: builder.mutation({
         query: (photo) => {
           return {
             url: `/photos${photo.id}`,
